@@ -1,0 +1,10 @@
+C:\Users\user\Desktop\코딩\Project1\DexServer\bin\Debug\DexServer.exe.config
+C:\Users\user\Desktop\코딩\Project1\DexServer\bin\Debug\DexServer.exe
+C:\Users\user\Desktop\코딩\Project1\DexServer\bin\Debug\DexServer.pdb
+C:\Users\user\Desktop\코딩\Project1\DexServer\bin\Debug\DexCommonUtil.dll
+C:\Users\user\Desktop\코딩\Project1\DexServer\bin\Debug\DexCommonUtil.pdb
+C:\Users\user\Desktop\코딩\Project1\DexServer\obj\Debug\DexServer.csprojAssemblyReference.cache
+C:\Users\user\Desktop\코딩\Project1\DexServer\obj\Debug\DexServer.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\코딩\Project1\DexServer\obj\Debug\DexServer.csproj.CopyComplete
+C:\Users\user\Desktop\코딩\Project1\DexServer\obj\Debug\DexServer.exe
+C:\Users\user\Desktop\코딩\Project1\DexServer\obj\Debug\DexServer.pdb

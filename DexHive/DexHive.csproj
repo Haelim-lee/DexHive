@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2A72403-3B2C-4A6C-9EDE-F7C4ABA76035}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DexHive</RootNamespace>
+    <AssemblyName>DexHive</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="앤츠네스트\상단메뉴모델.cs" />
+    <Compile Include="앤츠네스트\하단메뉴모델.cs" />
+    <Compile Include="사용자관리UI\로그인화면.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="사용자관리UI\로그인화면.Designer.cs">
+      <DependentUpon>로그인화면.cs</DependentUpon>
+    </Compile>
+    <Compile Include="앤츠네스트\앤츠네스트.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="앤츠네스트\앤츠네스트.Designer.cs">
+      <DependentUpon>앤츠네스트.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="사용자관리UI\회원가입화면.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="사용자관리UI\회원가입화면.Designer.cs">
+      <DependentUpon>회원가입화면.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\시스템관리\기준정보관리\기준정보.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\시스템관리\기준정보관리\기준정보.Designer.cs">
+      <DependentUpon>기준정보.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\시스템관리\기준정보관리\기준정보표_모델.cs" />
+    <Compile Include="컨텐츠화면\시스템관리\메뉴관리\메뉴관리.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\시스템관리\메뉴관리\메뉴관리.Designer.cs">
+      <DependentUpon>메뉴관리.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\시스템관리\사용자관리\사용자관리.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\시스템관리\사용자관리\사용자관리.Designer.cs">
+      <DependentUpon>사용자관리.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\시스템관리\사용자관리\사용자관리표_모델.cs" />
+    <Compile Include="컨텐츠화면\시스템관리\테이블관리\테이블관리.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\시스템관리\테이블관리\테이블관리.Designer.cs">
+      <DependentUpon>테이블관리.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\시스템관리\테이블관리\테이블관리표_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\공정관리%28반제품%29\LOT목록_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\공정관리%28반제품%29\LOT목록검색_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\공정관리%28반제품%29\자재LOT검색모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\공정관리%28반제품%29\자재LOT정보Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\공정관리%28반제품%29\자재LOT정보Popup.Designer.cs">
+      <DependentUpon>자재LOT정보Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\공정관리%28반제품%29\자재LOT정보그리드.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\공정관리%28반제품%29\주제공정시작.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\공정관리%28반제품%29\주제공정시작.Designer.cs">
+      <DependentUpon>주제공정시작.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산계획\조회조건모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산지시\작업생성모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산지시\작업조회모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산지시\작업지시그리드.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산지시\작업지시조회.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산지시\작업지시조회.Designer.cs">
+      <DependentUpon>작업지시조회.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산계획\월생산계획조회.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산계획\월생산계획조회.Designer.cs">
+      <DependentUpon>월생산계획조회.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산계획\월생산계획추가.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산계획\월생산계획추가.Designer.cs">
+      <DependentUpon>월생산계획추가.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산계획\입력조건모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\반제품생산이력검색_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\반제품생산이력조회.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\반제품생산이력조회.Designer.cs">
+      <DependentUpon>반제품생산이력조회.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\반제품생산이력표_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\생산LOT추적_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\생산LOT추적공통.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\생산LOT추적공통.Designer.cs">
+      <DependentUpon>생산LOT추적공통.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\생산LOT추적공통_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\완제품생산이력검색_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\완제품생산이력조회.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\완제품생산이력조회.Designer.cs">
+      <DependentUpon>완제품생산이력조회.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\완제품생산이력표_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\PopupGrid.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재POPUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재POPUP.Designer.cs">
+      <DependentUpon>자재POPUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재검색_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재등록.Designer.cs">
+      <DependentUpon>자재등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재등록모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재등록표_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재이동.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재이동.Designer.cs">
+      <DependentUpon>자재이동.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재이동검색모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재이동그리드모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재이동취소.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재이동취소.Designer.cs">
+      <DependentUpon>자재이동취소.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재이동취소검색모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재이동취소모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재입고검색_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재입고등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재입고등록.Designer.cs">
+      <DependentUpon>자재입고등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재입고등록_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재입고조회.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재입고조회.Designer.cs">
+      <DependentUpon>자재입고조회.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재입고표_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산지시\작업지시생성.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산지시\작업지시생성.Designer.cs">
+      <DependentUpon>작업지시생성.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재폐기.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재폐기.Designer.cs">
+      <DependentUpon>자재폐기.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재폐기검색모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재폐기그리드.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\제품등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\제품등록.Designer.cs">
+      <DependentUpon>제품등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\제품수정.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\제품수정.Designer.cs">
+      <DependentUpon>제품수정.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\품질관리\반제품_품질검사\반제품_품질검사.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\품질관리\반제품_품질검사\반제품_품질검사.Designer.cs">
+      <DependentUpon>반제품_품질검사.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\품질관리\반제품_품질검사\반제품검색조건모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\품질관리\반제품_품질검사\반제품품질검사그리드.cs" />
+    <Compile Include="컨텐츠화면\업무관리\계약관리\계약관리.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\계약관리\계약관리.Designer.cs">
+      <DependentUpon>계약관리.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\계약관리\거래처.cs" />
+    <Compile Include="컨텐츠화면\업무관리\일정관리\일정관리화면.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\일정관리\일정관리화면.Designer.cs">
+      <DependentUpon>일정관리화면.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\작업도구\가상데이터생성\가상데이터생성.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\작업도구\가상데이터생성\가상데이터생성.Designer.cs">
+      <DependentUpon>가상데이터생성.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\업무관리\작업도구\가상데이터생성\가상데이터표_모델.cs" />
+    <Compile Include="컨텐츠화면\업무관리\작업도구\가상데이터생성\검색조건_모델.cs" />
+    <Compile Include="컨텐츠화면\자금관리\계좌관리\검색조건_모델.cs" />
+    <Compile Include="컨텐츠화면\자금관리\계좌관리\계좌관리표_모델.cs" />
+    <Compile Include="컨텐츠화면\자금관리\계좌관리\계좌관리화면.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\자금관리\계좌관리\계좌관리화면.Designer.cs">
+      <DependentUpon>계좌관리화면.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\교육관리\교육관리.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\교육관리\교육관리.Designer.cs">
+      <DependentUpon>교육관리.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\교육관리\교육관리표_모델.cs" />
+    <Compile Include="컨텐츠화면\직원관리\기타인력관리\기타인력관리.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\기타인력관리\기타인력관리.Designer.cs">
+      <DependentUpon>기타인력관리.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\기타인력관리\기타인력관리표_모델.cs" />
+    <Compile Include="컨텐츠화면\직원관리\조직관리\조직관리.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\조직관리\조직관리.Designer.cs">
+      <DependentUpon>조직관리.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\조직관리\조직관리표_모델.cs" />
+    <Compile Include="컨텐츠화면\직원관리\직원등록\직원등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\직원등록\직원등록.Designer.cs">
+      <DependentUpon>직원등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\직원등록\직원등록표_모델.cs" />
+    <Compile Include="컨텐츠화면\직원관리\직원정보\직원정보.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\직원정보\직원정보.Designer.cs">
+      <DependentUpon>직원정보.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\직원정보\직원정보표_모델.cs" />
+    <Compile Include="컨텐츠화면\직원관리\협력사\협력사.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\협력사\협력사.Designer.cs">
+      <DependentUpon>협력사.cs</DependentUpon>
+    </Compile>
+    <Compile Include="컨텐츠화면\직원관리\협력사\협력사표_모델.cs" />
+    <EmbeddedResource Include="사용자관리UI\로그인화면.resx">
+      <DependentUpon>로그인화면.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="앤츠네스트\앤츠네스트.resx">
+      <DependentUpon>앤츠네스트.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="사용자관리UI\회원가입화면.resx">
+      <DependentUpon>회원가입화면.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\시스템관리\기준정보관리\기준정보.resx">
+      <DependentUpon>기준정보.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\시스템관리\메뉴관리\메뉴관리.resx">
+      <DependentUpon>메뉴관리.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\시스템관리\사용자관리\사용자관리.resx">
+      <DependentUpon>사용자관리.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\시스템관리\테이블관리\테이블관리.resx">
+      <DependentUpon>테이블관리.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\공정관리%28반제품%29\자재LOT정보Popup.resx">
+      <DependentUpon>자재LOT정보Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\공정관리%28반제품%29\주제공정시작.resx">
+      <DependentUpon>주제공정시작.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산지시\작업지시조회.resx">
+      <DependentUpon>작업지시조회.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산계획\월생산계획조회.resx">
+      <DependentUpon>월생산계획조회.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산계획\월생산계획추가.resx">
+      <DependentUpon>월생산계획추가.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\반제품생산이력조회.resx">
+      <DependentUpon>반제품생산이력조회.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\생산LOT추적공통.resx">
+      <DependentUpon>생산LOT추적공통.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\실적리포트\완제품생산이력조회.resx">
+      <DependentUpon>완제품생산이력조회.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재POPUP.resx">
+      <DependentUpon>자재POPUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재등록.resx">
+      <DependentUpon>자재등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재이동.resx">
+      <DependentUpon>자재이동.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재이동취소.resx">
+      <DependentUpon>자재이동취소.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재입고등록.resx">
+      <DependentUpon>자재입고등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재입고조회.resx">
+      <DependentUpon>자재입고조회.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\생산관리\생산지시\작업지시생성.resx">
+      <DependentUpon>작업지시생성.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\자재폐기.resx">
+      <DependentUpon>자재폐기.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\제품등록.resx">
+      <DependentUpon>제품등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\자재관리\제품수정.resx">
+      <DependentUpon>제품수정.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\품질관리\반제품_품질검사\반제품_품질검사.resx">
+      <DependentUpon>반제품_품질검사.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\계약관리\계약관리.resx">
+      <DependentUpon>계약관리.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\일정관리\일정관리화면.resx">
+      <DependentUpon>일정관리화면.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\업무관리\작업도구\가상데이터생성\가상데이터생성.resx">
+      <DependentUpon>가상데이터생성.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\자금관리\계좌관리\계좌관리화면.resx">
+      <DependentUpon>계좌관리화면.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\직원관리\교육관리\교육관리.resx">
+      <DependentUpon>교육관리.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\직원관리\기타인력관리\기타인력관리.resx">
+      <DependentUpon>기타인력관리.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\직원관리\조직관리\조직관리.resx">
+      <DependentUpon>조직관리.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\직원관리\직원등록\직원등록.resx">
+      <DependentUpon>직원등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\직원관리\직원정보\직원정보.resx">
+      <DependentUpon>직원정보.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="컨텐츠화면\직원관리\협력사\협력사.resx">
+      <DependentUpon>협력사.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DexCommonUtil\DexCommonUtil.csproj">
+      <Project>{865acaa8-7398-4b7d-8ab7-851ab0f4ca2d}</Project>
+      <Name>DexCommonUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="컨텐츠화면\시스템관리\권한그룹관리\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\건축관리\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공급망관리\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\APC\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\CIM\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\EIF\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\EMS\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\FDC\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\GMS\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\MDM\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\공정관리%28완제품%29\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\금형관리\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\MES\보정\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\RPT\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\SPC\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\공장관리\관리자\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\금융관리\" />
+    <Folder Include="컨텐츠화면\업무관리\가상시스템\병원관리\" />
+    <Folder Include="컨텐츠화면\업무관리\마케팅관리\" />
+    <Folder Include="컨텐츠화면\업무관리\신규사업관리\" />
+    <Folder Include="컨텐츠화면\업무관리\자재관리\" />
+    <Folder Include="컨텐츠화면\업무관리\작업도구\모니터캡쳐\" />
+    <Folder Include="컨텐츠화면\업무관리\작업도구\문자열파서\" />
+    <Folder Include="컨텐츠화면\업무관리\작업도구\슬레이브에이전트\" />
+    <Folder Include="컨텐츠화면\업무관리\작업도구\키보드캡쳐\" />
+    <Folder Include="컨텐츠화면\업무관리\작업도구\트리뷰에디터\" />
+    <Folder Include="컨텐츠화면\업무관리\작업도구\파일업로드\" />
+    <Folder Include="컨텐츠화면\업무관리\작업도구\폴더분석\" />
+    <Folder Include="컨텐츠화면\업무관리\출판관리\" />
+    <Folder Include="컨텐츠화면\업무관리\회의록\" />
+    <Folder Include="컨텐츠화면\자금관리\급여관리\" />
+    <Folder Include="컨텐츠화면\자금관리\세무회계관리\" />
+    <Folder Include="컨텐츠화면\자금관리\지출관리\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

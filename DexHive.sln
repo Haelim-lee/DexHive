@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexHive", "DexHive\DexHive.csproj", "{C2A72403-3B2C-4A6C-9EDE-F7C4ABA76035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexServer", "DexServer\DexServer.csproj", "{6A84FB98-D7B3-462D-8D50-D7AC9AD3F2E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "프레임워크", "프레임워크", "{E3600FF6-26E9-480F-AF13-DEE6D87DCA4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "라이브러리", "라이브러리", "{4C49F6AE-7B2D-4B8A-BCB3-322AC4F92787}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DexCommonUtil", "DexCommonUtil\DexCommonUtil.csproj", "{865ACAA8-7398-4B7D-8AB7-851AB0F4CA2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2A72403-3B2C-4A6C-9EDE-F7C4ABA76035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A72403-3B2C-4A6C-9EDE-F7C4ABA76035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A72403-3B2C-4A6C-9EDE-F7C4ABA76035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A72403-3B2C-4A6C-9EDE-F7C4ABA76035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A84FB98-D7B3-462D-8D50-D7AC9AD3F2E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A84FB98-D7B3-462D-8D50-D7AC9AD3F2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A84FB98-D7B3-462D-8D50-D7AC9AD3F2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A84FB98-D7B3-462D-8D50-D7AC9AD3F2E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865ACAA8-7398-4B7D-8AB7-851AB0F4CA2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865ACAA8-7398-4B7D-8AB7-851AB0F4CA2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865ACAA8-7398-4B7D-8AB7-851AB0F4CA2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865ACAA8-7398-4B7D-8AB7-851AB0F4CA2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{865ACAA8-7398-4B7D-8AB7-851AB0F4CA2D} = {E3600FF6-26E9-480F-AF13-DEE6D87DCA4A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80B4690B-AF6B-499A-95F1-9CC9E95D1D7F}
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal
